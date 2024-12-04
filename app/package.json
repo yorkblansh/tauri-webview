@@ -1,0 +1,30 @@
+{
+	"name": "lk",
+	"version": "0.0.1",
+	"author": "lds",
+	"private": true,
+	"scripts": {
+		"seed": "yarn workspace admin-api run prisma:seed",
+		"admin-api:generate-client": "yarn workspace admin-api run generate-client",
+		"UNUSED.react:build:barcode-app": "yarn workspace react run build:barcode-app",
+		"admin-api:build": "yarn workspace admin-api run build",
+		"admin-api:start:prod": "yarn workspace admin-api run start:prod",
+		"prettier": "prettier --write ."
+	},
+	"workspaces": {
+		"packages": [
+			"workspaces/*"
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^20.8.4",
+		"@yarnpkg/pnpify": "^4.0.0-rc.14",
+		"prettier": "^2.8.1",
+		"typescript": "^4.7.4"
+	},
+	"packageManager": "yarn@4.5.1",
+	"dependencies": {
+		"fp-ts": "^2.16.9",
+		"sass": "^1.80.6"
+	}
+}
